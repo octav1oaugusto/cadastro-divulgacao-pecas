@@ -9,11 +9,13 @@
 using namespace std;
 
 int main(void) {
-    Classificacao cap;
+    Classificacao classificacao;
+    Capacidade capacidade;
+    Cargo cargo;
 
-    cap.setValor("12");
+    cargo.setValor("ator");
 
-    cout << cap.getValor();
+    cout << cargo.getValor();
 
     return 0;
 }

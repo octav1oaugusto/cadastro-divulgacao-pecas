@@ -15,8 +15,10 @@ using namespace std;
 class Capacidade {
     private:
         int capacidade;
+        bool validarValor(int);
 
     public:
+        void setValor(int);
         int getValor() const {
                 return capacidade;
         }
@@ -26,7 +28,7 @@ class Capacidade {
 class Cargo {
     private:
         string cargo;
-        //bool validarValor(string);
+        bool validarValor(string);
 
     public:
         void setValor(string);
@@ -46,6 +48,29 @@ class Classificacao {
             return classificacao;
 		}
 };
+
+class Codigo {
+    public:
+        string codigo;
+        bool validarValor(string);
+    private:
+        void setValor(string);
+		string getValor() const {
+            return codigo;
+		}
+};
+
+
+
+class Data {
+    public:
+        string data;
+
+    private:
+};
+
+
+
 
 
 
